@@ -1,3 +1,6 @@
+export interface Results {
+    data: Champion[];
+}
 
 export interface Champion {
     version: Version;
