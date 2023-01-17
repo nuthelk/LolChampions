@@ -3,15 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-html {
-    background: rgb(4,81,89);
-background: radial-gradient(circle, rgba(4,81,89,1) 8%, rgba(4,78,86,1) 11%, rgba(0,0,0,1) 93%);
-=======
 
 html {
     background-image: linear-gradient(to right bottom, #000000, #050404, #090809, #0c0c0e, #0f1011, #131618, #141c1e, #162223, #172d2f, #15393d, #10454a, #045159);   
->>>>>>> a1501e1ad06371f8736ee7fad5bf318501713fe0
 }
 
 .divPadre:hover div{
