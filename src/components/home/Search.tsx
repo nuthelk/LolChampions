@@ -1,10 +1,11 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import SearchIcon from "../../assets/icon-search.svg"
 
 
 const Search: FC<{}> = () => {
 
   const championTypes=["Todos","Asesinos","Luchadores", "Magos", "Tiradores", "Soportes", "Tanques"]
+  const [champioTypeSelected, setChampionTypeSelected]= useState<string>("Todos")
 
   return (
     <section className="w-full flex max-lg:justify-between border-solid border-2 border-secondary rounded mt-12 p-2">
@@ -22,8 +23,8 @@ const Search: FC<{}> = () => {
         </select>
         {
           championTypes.map((type)=>(
-            <button className="max-lg:hidden cursor-pointer font-Signika text-white font-semibold hover:text-secondary  focus:text-secondary" key={type}>
-              {type.toUpperCase()}
+            <button className="max-lg:hidden cursor-pointer font-Signika text-white font-semibold hover:text-secondary uppercase focus:text-secondary active:text-secondary" key={type}>
+              {type}
             </button>
           ))
         }
