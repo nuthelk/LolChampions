@@ -1,12 +1,16 @@
-import Card from "./components/Card"
+import { Route, Routes } from "react-router"
+import { BrowserRouter } from "react-router-dom"
 import Home from "./pages/Home"
 
 function App() {
   
+
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
