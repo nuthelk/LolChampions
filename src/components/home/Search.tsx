@@ -23,7 +23,7 @@ const Search: FC<{}> = () => {
         </select>
         {
           championTypes.map((type)=>(
-            <button className="max-lg:hidden cursor-pointer  text-white font-semibold hover:text-secondary uppercase focus:text-secondary active:text-secondary" key={type}>
+            <button className="max-lg:hidden cursor-pointer  text-white font-semibold hover:text-secondary transition-all duration-500 uppercase focus:text-secondary active:text-secondary" key={type}>
               {type}
             </button>
           ))
