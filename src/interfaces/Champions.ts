@@ -5,7 +5,6 @@ export interface Results {
 export interface Champion {
     version: Version;
     id:      string;
-    key:     string;
     name:    string;
     title:   string;
     blurb:   string;

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+    background-image: linear-gradient(to right bottom, #000000, #050404, #090809, #0c0c0e, #0f1011, #131618, #141c1e, #162223, #172d2f, #15393d, #10454a, #045159);   
+}
 
 .divPadre:hover div{
     background-color: #00B2CF;
