@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../components/Card'
 import { Champion } from '../interfaces'
-import dataAPI from '../services/lolAPI'
+import {dataAPI} from '../services/lolAPI'
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
         dataAPI(setData)
     },[])
     
-    console.log(data)
+
 
   return (
     <div className='w-full h-full home'>
