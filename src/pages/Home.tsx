@@ -15,7 +15,8 @@ const Home = () => {
     console.log(data)
 
   return (
-    <div className='flex flex-wrap gap-1 w-4/5 mx-auto'>
+    <div className='w-full h-full home'>
+        <div className='flex flex-wrap gap-1 w-4/5 mx-auto '>
         {
             data.map((champ, i) => (
                 <Card key={champ.id}
@@ -24,7 +25,9 @@ const Home = () => {
                 />
             ))
         }
+        </div>
     </div>
+    
   )
 }
 

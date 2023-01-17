@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
-html {
+.home {
     background-image: linear-gradient(to right bottom, #000000, #050404, #090809, #0c0c0e, #0f1011, #131618, #141c1e, #162223, #172d2f, #15393d, #10454a, #045159);   
 }
 
