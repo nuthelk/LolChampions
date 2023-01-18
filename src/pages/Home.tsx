@@ -13,8 +13,6 @@ const Home = () => {
         dataAPI(setData)
     },[])
     
-
-
   return (
     <div className='w-full h-full home py-4'>
         <Header />
