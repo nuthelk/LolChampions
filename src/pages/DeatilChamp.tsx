@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { ChampionSingle } from '../interfaces/ChampionSingle';
 import { dataChamp } from '../services/lolAPI'
 import Info from '../components/Info';
+import HabilidadesChamp from '../components/HabilidadesChamp';
+
 
 const DeatilChamp = () => {
     const [dataChampion, setDataChampion] = useState<ChampionSingle>()
@@ -27,7 +29,7 @@ const DeatilChamp = () => {
                 tags={dataChampion?.tags}
                 lore={dataChampion?.lore}
             />
-
+            <HabilidadesChamp />
         </div>
     )
 }
