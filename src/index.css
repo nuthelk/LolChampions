@@ -17,3 +17,11 @@
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.imagenChamp {
+    -webkit-mask-image: linear-gradient(to top, transparent 0.5%, black 20%);
+    mask-image: linear-gradient(to top, transparent 0.5%, black 100%);
+}
+
+.textSombra {
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+}
