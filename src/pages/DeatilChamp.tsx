@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import { ChampionSingle } from '../interfaces/ChampionSingle';
 import { dataChamp } from '../services/lolAPI'
+import HabilidadesChamp from '../components/HabilidadesChamp';
 
 const DeatilChamp = () => {
     const [dataChampion, setDataChampion] = useState<ChampionSingle>()
@@ -30,7 +31,7 @@ const DeatilChamp = () => {
                     </div>
                 </div>
             </div>
-
+            <HabilidadesChamp />
         </div>
     )
 }
