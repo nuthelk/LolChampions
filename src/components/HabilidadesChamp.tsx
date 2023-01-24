@@ -5,7 +5,7 @@ const HabilidadesChamp = () => {
     console.log(isActive);
     
   return (
-    <div className='relative flex flex-col text-white w-[85%] gap-5 mt-10'>
+    <div className='relative flex flex-col text-white font-Signika max-w-max px-4 gap-5 mt-10'>
         <h1 className='font-bold text-2xl self-center'>Habilidades</h1>
         <div className='flex gap-4 md:gap-10 mx-auto '>
             <button onClick={()=>{
@@ -36,8 +36,8 @@ const HabilidadesChamp = () => {
         </div>
         <div>
             <p className='font-mono font-thin text-xs'>Pasiva</p>
-            <h1 className='text-lg uppercase font-Crimson'>Nombre Habilidad</h1>
-            <p className='mt-5 font-thin font-sans text-sm'>Cada cierto tiempo, el siguiente ataque básico de Aatrox inflige daño físico adicional según la vida máxima del objetivo, y lo cura por la cantidad de daño infligido</p>
+            <h1 className='text-lg uppercase '>Nombre Habilidad</h1>
+            <p className='mt-5 font-thin font-sans text-lg'>Cada cierto tiempo, el siguiente ataque básico de Aatrox inflige daño físico adicional según la vida máxima del objetivo, y lo cura por la cantidad de daño infligido</p>
         </div>
     </div> 
   )

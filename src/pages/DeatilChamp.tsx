@@ -21,7 +21,7 @@ const DeatilChamp = () => {
     return (
         <div
             style={{ backgroundImage: `url(${urlImage})` }}
-            className={`bg-cover bg-no-repeat bg-center before:bg-[rgba(0,0,0,.7)] before:backdrop-saturate-50 overflow-auto before:backdrop-blur-sm before:inset-0 before:absolute relative min-h-screen w-full font-Signika flex flex-col items-center `}>
+            className={`bg-cover bg-no-repeat bg-center before:bg-[rgba(0,0,0,.7)] before:backdrop-saturate-50 py-2 overflow-auto before:backdrop-blur-sm before:inset-0 before:absolute relative min-h-screen w-full font-Signika flex flex-col items-center `}>
             <Info 
                 urlImage={urlImage}
                 title={dataChampion?.title}
