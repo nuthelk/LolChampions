@@ -56,7 +56,8 @@ const Search = ({champions, setChampions}) => {
     setChampions(tempDataFiltered)
 
   }
-
+ 
+   //a
   return (
     <section className="w-full flex max-lg:justify-between font-Signika border-solid border-2 border-secondary rounded mt-12 p-2">
       <div className="w-fit  border-solid border-r-2 flex items-center gap-2 border-secondary">
