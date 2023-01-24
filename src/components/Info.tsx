@@ -12,7 +12,7 @@ interface Props {
 const Info: FC<Props> = ({ urlImage, title, name, tags, lore }) => {
     console.log(tags)
     return (
-        <div className='relative mt-14 rounded-lg px-4 text-center flex flex-col justify-center text-white '>
+        <div className=' relative mt-14 rounded-lg px-4 text-center flex flex-col justify-center text-white '>
             <img src={urlImage} alt="" className='rounded-lg max-h-[600px] imagenChamp' />
 
             <div className='flex flex-col relative items-center -mt-24 textSombra  '>

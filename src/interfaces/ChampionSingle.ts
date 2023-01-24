@@ -11,7 +11,7 @@ export interface ChampionSingle {
     key:         string;
     name:        string;
     title:       string;
-    image:       Image;
+    image:       ImageSingle;
     skins:       Skin[];
     lore:        string;
     blurb:       string;
@@ -19,14 +19,14 @@ export interface ChampionSingle {
     enemytips:   string[];
     tags:        string[];
     partype:     string;
-    info:        Info;
+    info:        InfoSingle;
     stats:       { [key: string]: number };
     spells:      Spell[];
     passive:     Passive;
     recommended: any[];
 }
 
-export interface Image {
+export interface ImageSingle {
     full:   string;
     sprite: string;
     group:  string;
@@ -36,7 +36,7 @@ export interface Image {
     h:      number;
 }
 
-export interface Info {
+export interface InfoSingle {
     attack:     number;
     defense:    number;
     magic:      number;
@@ -46,7 +46,7 @@ export interface Info {
 export interface Passive {
     name:        string;
     description: string;
-    image:       Image;
+    image:       ImageSingle;
 }
 
 export interface Skin {
@@ -75,7 +75,7 @@ export interface Spell {
     maxammo:      string;
     range:        number[];
     rangeBurn:    string;
-    image:        Image;
+    image:        ImageSingle;
     resource:     string;
 }
 

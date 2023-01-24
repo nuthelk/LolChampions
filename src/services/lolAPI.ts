@@ -1,7 +1,6 @@
 import axios from "axios";
 import { DataSingle,ChampionSingle } from "../interfaces";
 import { Results } from '../interfaces/Champions';
-import { useParams } from 'react-router-dom';
 
 
 

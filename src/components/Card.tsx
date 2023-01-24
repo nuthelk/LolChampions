@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom';
 import { Champion } from '../interfaces'
-import { Link } from "react-router-dom";
+
 
 interface Props {
     name: string;
