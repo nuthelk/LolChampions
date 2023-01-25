@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion"
 
 const HabilidadesChamp = () => {
     const [isActive, setIsActive] = useState("passive")
     console.log(isActive);
     
   return (
-    <div className='relative flex flex-col text-white font-Signika max-w-max px-4 gap-5 mt-10'>
+    <motion.div
+        initial = {{opacity: 0}}
+        whileInView = {{opacity: 1 }}
+        transition={{delay: 0.2}}       
+    className='relative flex flex-col text-white font-Signika max-w-max px-4 gap-5 mt-10'>
         <h1 className='font-bold text-2xl self-center'>Habilidades</h1>
         <div className='flex gap-4 md:gap-10 mx-auto '>
             <button onClick={()=>{
@@ -39,7 +44,7 @@ const HabilidadesChamp = () => {
             <h1 className='text-lg uppercase '>Nombre Habilidad</h1>
             <p className='mt-5 font-thin font-sans text-lg'>Cada cierto tiempo, el siguiente ataque básico de Aatrox inflige daño físico adicional según la vida máxima del objetivo, y lo cura por la cantidad de daño infligido</p>
         </div>
-    </div> 
+    </motion.div> 
   )
 }
 

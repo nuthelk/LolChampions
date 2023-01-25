@@ -59,12 +59,12 @@ const Search = ({champions, setChampions}) => {
  
    //a
   return (
-    <section className="w-full flex max-lg:justify-between font-Signika border-solid border-2 border-secondary rounded mt-12 p-2">
+    <section className="w-full  flex max-lg:justify-between font-Signika border-solid border-2 border-secondary rounded mt-12 p-2 ">
       <div className="w-fit  border-solid border-r-2 flex items-center gap-2 border-secondary">
         <img className="w-5" src={SearchIcon} alt="Search Icon"/>
         <input onChange={(e)=>{onChangeSearch(e)}} className="w-56 max-lg:w-28 h-10 outline-none  text-white bg-transparent" type="text" placeholder="Buscar" />
       </div>
-      <div className="flex gap-8 items-center m-auto max-lg:m-0">
+      <div className="flex gap-4 xl:gap-8 items-center m-auto max-lg:m-0">
         <select className="lg:hidden outline-none  text-white font-semibold bg-transparent">
         {
           championTypes.map((championType, index)=>(

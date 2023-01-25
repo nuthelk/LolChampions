@@ -1,6 +1,7 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { Link } from 'react-router-dom';
-import { Champion } from '../interfaces'
+import { motion } from "framer-motion"
+
 
 
 interface Props {
@@ -13,7 +14,11 @@ const Card: FC<Props> = ({ name, id }) => {
     return (
 
 
-        <div className='w-36 h-52 md:w-40 md:h-64 lg:w-48 lg:h-72 relative m-auto mt-10 rounded-md divPadre cursor-pointer'>
+        <motion.div
+        initial={{opacity: 0, scale: 0.5}}
+        animate={{opacity: 1, scale: 1}}
+        transition={{duration: 0.8, delay: 0.3, ease: [0, 0.71, 0.2, 1.01]}}
+        className='w-36 h-52 md:w-40 md:h-64 lg:w-48 lg:h-72 relative m-auto mt-10 rounded-md divPadre cursor-pointer'>
             <Link to={`/champion/${id}`}>
                 <div className='h-full w-full overflow-hidden rounded-md '>
                     <img className='h-full w-full object-cover object-top scale-110 hover:scale-100 transition-all duration-500' src={`http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`} alt="img" />
@@ -23,7 +28,7 @@ const Card: FC<Props> = ({ name, id }) => {
                     <h1 className='text-white font-Signika font-bold uppercase text-lg ml-2 transition-all duration-500'>{name}</h1>
                 </div>
             </Link>
-        </div >
+        </motion.div >
 
 
     )

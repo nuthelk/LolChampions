@@ -19,9 +19,9 @@ const Home = () => {
     },[data])
     
   return (
-    <div className='w-full min-h-screen home py-4'>
+    <div className='w-full min-h-screen home py-10 2xl:px-64 '>
         <Header champions={data} setChampions={setDataFiltered}/>
-        <div className='flex flex-wrap gap-1 w-4/5 mx-auto '>
+        <div className='flex flex-wrap gap-3  mx-10 '>
         {
             dataFiltered.map((champ, i) => (
                 <Card key={champ.id}

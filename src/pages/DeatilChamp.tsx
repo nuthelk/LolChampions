@@ -6,13 +6,16 @@ import HabilidadesChamp from '../components/HabilidadesChamp';
 import Skins from '../components/detailChamp/Skins';
 import { useParams } from 'react-router-dom';
 
+
+
 const DeatilChamp = () => {
     const [dataChampion, setDataChampion] = useState<ChampionSingle>()
     const { championId } = useParams()
+    const [skinsData,setSkinsData]=useState([])
     const url = `http://ddragon.leagueoflegends.com/cdn/13.1.1/data/es_MX/champion/${championId}.json`
     const urlImage = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`
 
-    const [skinsData,setSkinsData]=useState([])
+    
 
     useEffect(() => {
         dataChamp(setDataChampion, url)
