@@ -1,6 +1,9 @@
 import React, { FC, useEffect, useState } from "react";
 import { ChampionSingle } from "../../interfaces";
 import { Champion } from '../../interfaces/Champions';
+import { motion } from "framer-motion"
+
+
 
 interface Props {
   skinsData? : any;
@@ -28,7 +31,11 @@ const Skins: FC<Props> = ({ skinsData, championId }) => {
   return (
     <>
       {/* <h2 className="relative mt-14 text-white font-Signika text-xl md:text-5xl lg:text-7xl xl:text-8xl uppercase">Aspectos</h2> */}
-      <section className="flex w-full flex-col items-center px-4 mb-10 animateLoad">
+      <motion.section 
+        initial = {{opacity: 0}}
+        whileInView = {{opacity: 1 }}
+        transition={{delay: 0.5, duration: 1}}
+      className="flex w-full flex-col items-center px-4 mb-10 ">
         <aside className="relative mt-14 px-4 rounded-lg flex flec-col justify-center text-center">
           <img className="max-h-[600px] rounded-md" src={skinSelected.img} alt={skinSelected.name}/>
           <div className="flex flex-col items-center bottom-4 md:bottom-6 lg:bottom-0 absolute" >
@@ -48,7 +55,7 @@ const Skins: FC<Props> = ({ skinsData, championId }) => {
         }
         </div>
 
-      </section>
+      </motion.section>
     </>
   )
 };

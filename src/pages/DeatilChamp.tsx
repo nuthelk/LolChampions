@@ -25,6 +25,7 @@ const DeatilChamp = () => {
         getSkinsData(dataChampion)
     },[dataChampion])
 
+
     const getSkinsData =(data:any)=>{
         let tempSkins = new Array();
         data && (
@@ -48,7 +49,7 @@ const DeatilChamp = () => {
                 tags={dataChampion?.tags}
                 lore={dataChampion?.lore}
             />
-            <HabilidadesChamp />
+            <HabilidadesChamp abilities={dataChampion?.spells} pasiva={dataChampion?.passive} />
             <Skins skinsData={skinsData} championId={championId}/>
         </div>
         </>
