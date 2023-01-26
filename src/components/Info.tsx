@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { motion } from "framer-motion"
 
 interface Props {
     urlImage: string;
@@ -12,13 +13,15 @@ interface Props {
 const Info: FC<Props> = ({ urlImage, title, name, tags, lore }) => {
     console.log(tags)
     return (
-        <div className=' relative mt-14 rounded-lg px-4 text-center flex flex-col justify-center text-white '>
+        <motion.div 
+            
+        className=' relative mt-14 rounded-lg px-4 text-center flex flex-col justify-center text-white '>
             <img src={urlImage} alt="" className='rounded-lg max-h-[600px] imagenChamp' />
 
             <div className='flex flex-col relative items-center -mt-24 textSombra  '>
                 <p className=' italic text-lg md:text-2xl lg:text-4xl textSombra '>{title}</p>
                 <h1 className=' italic bottom-4  text-4xl md:text-5xl lg:text-7xl xl:text-8xl uppercase'>{name}</h1>
-                <div className=' flex flex-col lg:flex-row items-center py-4  justify-center mt-2 border-[1px] border-slate-600  '>
+                <div className=' flex flex-col lg:flex-row items-center py-4 justify-center mt-2 border-[1px] border-slate-600 w-full '>
 
                     <div className='flex items-center gap-12 g:mt-8 border-b-[1px] pb-4 w-[40%] justify-center lg:border-b-0 lg:w-full bg-transparent'>
                         {
@@ -36,7 +39,7 @@ const Info: FC<Props> = ({ urlImage, title, name, tags, lore }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

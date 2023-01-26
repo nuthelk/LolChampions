@@ -34,7 +34,8 @@ const Skins: FC<Props> = ({ skinsData, championId }) => {
       <motion.section 
         initial = {{opacity: 0}}
         whileInView = {{opacity: 1 }}
-        transition={{delay: 0.5, duration: 1}}
+        transition={{delay: 0.5, duration: 0.5}}
+        viewport={{once: true}}
       className="flex w-full flex-col items-center px-4 mb-10 ">
         <aside className="relative mt-14 px-4 rounded-lg flex flec-col justify-center text-center">
           <img className="max-h-[600px] rounded-md" src={skinSelected.img} alt={skinSelected.name}/>

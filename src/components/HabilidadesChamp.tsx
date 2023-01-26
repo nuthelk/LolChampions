@@ -23,9 +23,10 @@ const HabilidadesChamp:FC<Props>  = ({abilities,pasiva}) => {
     <motion.div
         initial = {{opacity: 0}}
         whileInView = {{opacity: 1 }}
-        transition={{delay: 0.5, duration: 1}}       
-    className='relative flex flex-col text-white font-Signika motion-safe:animate-safe gap-10 px-4 w-[90%] md:w-[95%] lg:w-[90%] xl:w-[50%] mt-10 border-[1px] border-slate-600'>
-        <h1 className='font-bold text-2xl self-center'>Habilidades</h1>
+        transition={{delay: 0.5, duration: 1}}
+        viewport={{once: true}}       
+    className='relative flex flex-col text-white font-Signika motion-safe:animate-safe gap-10 px-4 w-[90%] md:w-[95%] lg:w-[90%] xl:w-[50%] mt-10  border-slate-600'>
+        <h1 className='font-bold text-4xl self-center mb-4'>Habilidades</h1>
         <div className='flex gap-4 md:gap-10 mx-auto '>
             <button onClick={()=>{
                 setIsActive("passive");

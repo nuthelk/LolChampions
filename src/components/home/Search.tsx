@@ -3,7 +3,7 @@ import SearchIcon from "../../assets/icon-search.svg"
 
 
 const Search = ({champions, setChampions}) => {  
-  // console.log(champions);
+
   const championTypes=[{
     type:"Todos",
     tags:["Assassin","Figther", "Mage", "Marksman", "Support", "Tank"]
@@ -40,7 +40,6 @@ const Search = ({champions, setChampions}) => {
     tags.length === 1 
     && (tempDataFiltered = tempDataFiltered.filter(champ=>champ.tags.includes(tags[0])))
      
-       console.log(tempDataFiltered);
   setChampions(tempDataFiltered)
 
   }
@@ -52,14 +51,13 @@ const Search = ({champions, setChampions}) => {
 
   const onChangeSearch=({target})=>{
     let tempDataFiltered= champions.filter(champ=> champ.id.toLowerCase().includes(target.value.toLowerCase()))
-    console.log(tempDataFiltered);
     setChampions(tempDataFiltered)
 
   }
  
    //a
   return (
-    <section className="w-full  flex max-lg:justify-between font-Signika border-solid border-2 border-secondary rounded mt-12 p-2 ">
+    <section className="w-full flex max-lg:justify-between font-Signika border-solid border-2 border-secondary rounded mt-12 p-2 ">
       <div className="w-fit  border-solid border-r-2 flex items-center gap-2 border-secondary">
         <img className="w-5" src={SearchIcon} alt="Search Icon"/>
         <input onChange={(e)=>{onChangeSearch(e)}} className="w-56 max-lg:w-28 h-10 outline-none  text-white bg-transparent" type="text" placeholder="Buscar" />

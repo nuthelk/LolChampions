@@ -21,12 +21,13 @@ const Home = () => {
   return (
     <div className='w-full min-h-screen home py-10 2xl:px-64 '>
         <Header champions={data} setChampions={setDataFiltered}/>
-        <div className='flex flex-wrap gap-3  mx-10 '>
+        <div className='flex flex-wrap  gap-3 mx-10 '>
         {
             dataFiltered.map((champ, i) => (
                 <Card key={champ.id}
                 name={champ.name}
                 id={champ.id}
+                data={dataFiltered}
                 />
             ))
         }
