@@ -52,7 +52,7 @@ const HabilidadesChamp:FC<Props>  = ({abilities,pasiva}) => {
             initial={{opacity: 0}}
             animate={controls}
             transition={{duration: 1}}
-        className='mt-10 flex flex-col md:gap-2 mb-16 w-72 h-64 md:w-[500px] mx-auto'>
+        className='mt-10 flex flex-col md:gap-2 mb-16 w-72 h-96 md:w-[500px] mx-auto overflow-y-auto'>
             <p className='font-mono font-thin text-xs'>{isActive=="passive" ? "Passive": "Spell"}</p>
             <h1 className='text-lg uppercase '>{name ? name : pasiva?.name}</h1>
             <p className='mt-5 font-thin font-sans text-md'>{information ? information : pasiva?.description}</p>
