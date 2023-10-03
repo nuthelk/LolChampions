@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.home {
+    background: #14141A;
+
+}
+
+.divPadre:hover div{
+    background-color: #00B2CF;
+}
+
+.divPadre:hover h1{
+    --tw-translate-x: 0.75rem/* 12px */;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+
+.animateLoad {
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: 700ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: load;
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.imagenChamp {
+    -webkit-mask-image: linear-gradient(to top, transparent 0.5%, black 20%);
+    mask-image: linear-gradient(to top, transparent 0.5%, black 100%);
+}
+
