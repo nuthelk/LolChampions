@@ -37,7 +37,7 @@ const Skins: FC<Props> = ({ skinsData, championId }) => {
             initial={{ opacity: 0.8 }}
             animate={{ opacity: 1, }}
             exit={{ opacity: 0.8, }}
-            transition={{ type: "just", damping: 10, stiffness: 100 }}
+            transition={{ duration: 0.3 }}
             className="h-auto rounded-md"
             src={skinSelected.img}
             alt={skinSelected.name}
