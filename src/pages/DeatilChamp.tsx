@@ -12,7 +12,7 @@ const DeatilChamp = () => {
     const [dataChampion, setDataChampion] = useState<ChampionSingle>()
     const { championId } = useParams()
     const [skinsData, setSkinsData] = useState([])
-    const url = `http://ddragon.leagueoflegends.com/cdn/13.1.1/data/es_MX/champion/${championId}.json`
+    const url = `https://ddragon.leagueoflegends.com/cdn/13.1.1/data/es_MX/champion/${championId}.json`
     const urlImage = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`
 
     const location = useLocation();
